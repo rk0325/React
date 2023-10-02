@@ -58,6 +58,28 @@ ReactDomにはrenderという関数が用意されている
 
 “react”からFragmentをimportして使用するか、空のタグで囲んでも同じ意味になる
 
+### コンポーネントの使い方
 
+関数で定義されたコンポーネントを関数コンポーネントと呼ぶ
 
+my-app/src/App.jsx
+
+```jsx
+export const App = () => {
+  return (
+    <>
+      <h1>こんにちは！</h1>
+      <p>お元気ですか？</p>
+    </>
+  );
+};
+```
+
+my-app/src/index.js
+```
+import ReactDOM from "react-dom";
+import { App } from "./App.jsx";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
 
