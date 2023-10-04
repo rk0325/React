@@ -484,9 +484,9 @@ useEffect(実行する関数, [依存する値]);
 例：Stateの値が変わった時のみアラートを表示する
 
 ```jsx
-export const App = () ⇒ {
+export const App = () => {
 
-  useEffect(() ⇒ {
+  useEffect(() => {
     alert))();
 }, [num]);
   return (
